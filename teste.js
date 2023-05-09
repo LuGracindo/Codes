@@ -9,7 +9,7 @@ const readline = require('readline').createInterface({
 
 new Promise(function(resolve){
       readline.question('Digite seu peso: ', function(peso){
-        readline.question('Digite sua altura em centímetros: ', function(altura){
+        readline.question('Digite sua altura: ', function(altura){
             altura = (altura/100);                            
             imc = peso/(altura * altura);
             if (imc < 18.5){
